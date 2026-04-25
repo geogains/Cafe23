@@ -1,26 +1,119 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
+/* ─── Custom theme tokens ─────────────────────────────────────────────── */
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  /* Brand colours */
+  --color-primary:        #608552;
+  --color-primary-dark:   #4A6B3E;
+  --color-primary-light:  #8FAB82;
+  --color-sage:           #B5CCAF;
+
+  /* Neutral / background */
+  --color-cream:          #F7F2E9;
+  --color-beige:          #EDE8DC;
+  --color-sand:           #E4DDD1;
+
+  /* Text */
+  --color-ink:            #1C1C1C;
+  --color-muted:          #5A5A5A;
+  --color-subtle:         #888888;
+
+  /* White */
+  --color-white:          #FFFFFF;
+
+  /* Background (overriding Next.js default) */
+  --color-background:     #F7F2E9;
+  --color-foreground:     #1C1C1C;
+
+  /* Typography */
+  --font-display:  var(--font-playfair);
+  --font-sans:     var(--font-dm-sans);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+/* ─── Base reset / body styles ────────────────────────────────────────── */
+:root {
+  --background: #F7F2E9;
+  --foreground: #1C1C1C;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-dm-sans), system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ─── Float keyframes (for the showcase section) ──────────────────────── */
+@keyframes float-slow {
+  0%, 100% { transform: translateY(0px) rotate(var(--tw-rotate, 0deg)); }
+  50%       { transform: translateY(-12px) rotate(var(--tw-rotate, 0deg)); }
+}
+
+@keyframes float-medium {
+  0%, 100% { transform: translateY(0px) rotate(var(--tw-rotate, 0deg)); }
+  50%       { transform: translateY(-8px) rotate(var(--tw-rotate, 0deg)); }
+}
+
+@keyframes float-fast {
+  0%, 100% { transform: translateY(0px) rotate(var(--tw-rotate, 0deg)); }
+  50%       { transform: translateY(-6px) rotate(var(--tw-rotate, 0deg)); }
+}
+
+@keyframes float-gentle {
+  0%, 100% { transform: translateY(0px) translateX(0px); }
+  33%       { transform: translateY(-6px) translateX(3px); }
+  66%       { transform: translateY(-10px) translateX(-3px); }
+}
+
+@keyframes fade-up {
+  from { opacity: 0; transform: translateY(24px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fade-in {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@keyframes scale-in {
+  from { opacity: 0; transform: scale(0.95); }
+  to   { opacity: 1; transform: scale(1); }
+}
+
+@keyframes slide-right {
+  from { opacity: 0; transform: translateX(-24px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+
+/* ─── Utility animation classes ───────────────────────────────────────── */
+.animate-float-slow   { animation: float-slow 6s ease-in-out infinite; }
+.animate-float-medium { animation: float-medium 4.5s ease-in-out infinite; }
+.animate-float-fast   { animation: float-fast 3.5s ease-in-out infinite; }
+.animate-float-gentle { animation: float-gentle 7s ease-in-out infinite; }
+.animate-fade-up      { animation: fade-up 0.7s ease-out forwards; }
+.animate-fade-in      { animation: fade-in 0.6s ease-out forwards; }
+.animate-scale-in     { animation: scale-in 0.5s ease-out forwards; }
+.animate-slide-right  { animation: slide-right 0.6s ease-out forwards; }
+
+/* ─── Scroll reveal helpers ───────────────────────────────────────────── */
+.reveal {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ─── Typography helpers ──────────────────────────────────────────────── */
+.font-display { font-family: var(--font-playfair), Impact, sans-serif; }
+
+/* ─── Image placeholder ───────────────────────────────────────────────── */
+.img-placeholder {
+  background: linear-gradient(135deg, #d4cfc6 0%, #bfb9ae 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
