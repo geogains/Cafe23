@@ -7,22 +7,22 @@ const pillars = [
   {
     icon: Coffee,
     title: "Coffee worth travelling for",
-    body: "Our Colombian single origin beans are roasted for depth and complexity — not just caffeine. Every cup is brewed with precision and care.",
+    body: "Our Colombian single origin beans are roasted for depth and complexity, not just caffeine. Every cup is brewed with precision and care.",
   },
   {
     icon: Sparkles,
     title: "Drinks people keep coming back for",
-    body: "From our thick ceremonial-grade matcha lattes to our warming Kashmiri chai — the speciality drinks menu is the reason regulars never stray.",
+    body: "From our thick ceremonial-grade matcha lattes to our warming Kashmiri chai, the speciality drinks menu is the reason regulars never stray.",
   },
   {
     icon: BookOpen,
     title: "A space that lets you breathe",
-    body: "Calm enough to focus. Comfortable enough to stay. Whether you're studying, working, or just need a quiet hour — this is your spot.",
+    body: "Calm enough to focus. Comfortable enough to stay. Whether you're studying, working, or just need a quiet hour, this is your spot.",
   },
   {
     icon: Users,
     title: "Community at its heart",
-    body: "We're not just another café — we're a gathering place. Family-friendly, inclusive, and always ready to welcome a new face.",
+    body: "We're not just another café, we're a gathering place. Family-friendly, inclusive, and always ready to welcome a new face.",
   },
 ];
 
@@ -63,7 +63,7 @@ export function ExperienceSection() {
             <span className="text-[#608552]">Much more.</span>
           </h2>
           <p className="reveal text-[#5A5A5A] text-lg mt-5 leading-relaxed">
-            Cafe 23 is a space that adapts to you — morning coffee runs, afternoon study sessions, family weekends,
+            Cafe 23 is a space that adapts to you. Morning coffee runs, afternoon study sessions, family weekends,
             or a long catch-up with someone you&apos;ve been meaning to see.
           </p>
         </div>

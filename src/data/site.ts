@@ -2,7 +2,7 @@ export const siteConfig = {
   name: "Cafe 23",
   tagline: "Walsall's favourite independent café",
   description:
-    "Located in the heart of Walsall, Cafe 23 serves rich Colombian coffee, speciality matcha and chai, freshly baked pastries, and comfort food — inside one of the cosiest spaces in the Midlands.",
+    "Located in the heart of Walsall, Cafe 23 serves rich Colombian coffee, speciality matcha and chai, freshly baked pastries, and comfort food, inside one of the cosiest spaces in the Midlands.",
   address: {
     line1: "27 Park Street",
     line2: "Saddlers Shopping Centre",

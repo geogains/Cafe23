@@ -125,7 +125,7 @@ export function VisitSection() {
         <div className="reveal mt-10 bg-white rounded-3xl p-7 border border-[#E4DDD1]">
           <p className="text-[#5A5A5A] text-sm leading-relaxed">
             <strong className="text-[#1C1C1C]">Easy to get to.</strong>{" "}
-            We&apos;re located inside the Saddlers Shopping Centre in Walsall town centre — minutes from the bus station and Walsall train station. Look for us on Park Street.
+            We&apos;re located inside the Saddlers Shopping Centre in Walsall town centre, minutes from the bus station and Walsall train station. Look for us on Park Street.
           </p>
         </div>
 

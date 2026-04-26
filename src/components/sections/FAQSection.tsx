@@ -3,7 +3,7 @@ import Link from "next/link";
 const faqs = [
   {
     q: "Do you have Wi-Fi?",
-    a: "Yes — we have free Wi-Fi throughout the café. Cafe 23 is a favourite spot for working and studying.",
+    a: "Yes, we have free Wi-Fi throughout the café. Cafe 23 is a favourite spot for working and studying.",
   },
   {
     q: "Is Cafe 23 family-friendly?",
@@ -15,7 +15,7 @@ const faqs = [
   },
   {
     q: "Can I bring my laptop and work here?",
-    a: "Of course — that&apos;s exactly what this space is for. There are plug sockets available and the atmosphere is calm enough to focus.",
+    a: "Of course, that&apos;s exactly what this space is for. There are plug sockets available and the atmosphere is calm enough to focus.",
   },
   {
     q: "Do you take card payments?",
@@ -66,7 +66,7 @@ export function FAQSection() {
 
         <div className="text-center mt-12">
           <p className="text-[#5A5A5A] text-sm mb-4">
-            Still have a question? We&apos;re friendly — just come in and ask.
+            Still have a question? We&apos;re friendly, just come in and ask.
           </p>
           <Link
             href="/visit"

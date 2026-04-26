@@ -147,7 +147,7 @@ export default function AboutPage() {
                 </p>
                 <p>
                   The space itself has been designed to make people feel at ease. It&apos;s warm, aesthetic,
-                  and deliberately calm — whether you&apos;re in for a quick coffee between errands, settling
+                  and deliberately calm. Whether you&apos;re in for a quick coffee between errands, settling
                   in to work for the afternoon, or bringing the family in for a treat.
                 </p>
                 <p>
@@ -208,10 +208,10 @@ export default function AboutPage() {
               An interior worth visiting on its own.
             </h2>
             <p className="text-[#5A5A5A] text-base sm:text-lg leading-relaxed mb-6">
-              The atmosphere at Cafe 23 is something people comment on instantly — cosy but aesthetic, calm but social. It&apos;s a space that&apos;s easy to settle into and hard to leave.
+              The atmosphere at Cafe 23 is something people comment on instantly, cosy but aesthetic, calm but social. It&apos;s a space that&apos;s easy to settle into and hard to leave.
             </p>
             <p className="text-[#5A5A5A] text-base leading-relaxed mb-8">
-              Whether you&apos;re solo with a laptop, catching up with friends, or bringing the kids in for a weekend treat — Cafe 23 adapts around you.
+              Whether you&apos;re solo with a laptop, catching up with friends, or bringing the kids in for a weekend treat, Cafe 23 adapts around you.
             </p>
             <Link
               href="/visit"

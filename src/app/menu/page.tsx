@@ -133,7 +133,7 @@ export default function MenuPage() {
             Our Menu
           </h1>
           <p className="reveal text-white/60 text-lg sm:text-xl max-w-2xl mx-auto leading-relaxed">
-            From our signature Colombian coffee to our legendary loaded croissants —
+            From our signature Colombian coffee to our legendary loaded croissants, 
             everything is made with care and served with warmth.
           </p>
           <p className="reveal mt-4 text-[#8FAB82] text-sm">

@@ -129,7 +129,7 @@ export function FloatingShowcase() {
             </h2>
             <div className="reveal bg-white/5 backdrop-blur-[3px] border border-white/20 rounded-2xl px-5 py-4 sm:px-6 sm:py-5">
               <p className="text-[#5A5A5A] text-base sm:text-lg leading-relaxed">
-                From our silky matcha lattes to our legendary loaded croissants — everything on the menu is made to make your day a little better.
+                From our silky matcha lattes to our legendary loaded croissants, everything on the menu is made to make your day a little better.
               </p>
             </div>
           </div>

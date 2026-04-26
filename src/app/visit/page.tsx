@@ -47,7 +47,7 @@ export default function VisitPage() {
             <br />Harder to leave.
           </h1>
           <p className="reveal text-white/75 text-lg sm:text-xl max-w-2xl mx-auto leading-relaxed">
-            We&apos;re right in the heart of Walsall — inside the Saddlers Shopping Centre on Park Street. Come in, sit down, and stay a while.
+            We&apos;re right in the heart of Walsall, inside the Saddlers Shopping Centre on Park Street. Come in, sit down, and stay a while.
           </p>
         </div>
 

@@ -21,7 +21,7 @@ export function Footer() {
               />
             </div>
             <p className="text-white/60 text-sm leading-relaxed">
-              Walsall&apos;s favourite independent café. Colombian coffee, speciality drinks, comfort food — and a community that feels like home.
+              Walsall&apos;s favourite independent café. Colombian coffee, speciality drinks, comfort food, and a community that feels like home.
             </p>
             <div className="flex items-center gap-3 mt-6">
               {/* [PLACEHOLDER] Replace href with actual social URLs */}
@@ -96,7 +96,7 @@ export function Footer() {
             <h3 className="text-sm font-semibold uppercase tracking-widest text-[#608552] mb-5">Opening Hours</h3>
             <div className="flex items-start gap-2 text-white/60 text-sm mb-3">
               <Clock className="w-4 h-4 text-[#608552] flex-shrink-0 mt-0.5" />
-              <span>Hours vary — see below</span>
+              <span>Hours vary, see below</span>
             </div>
             <ul className="space-y-1.5">
               {siteConfig.hours.slice(0, 4).map((h) => (
@@ -107,7 +107,7 @@ export function Footer() {
               ))}
               <li className="text-white/40 text-xs mt-2">
                 {/* [PLACEHOLDER] Confirm actual hours */}
-                Weekend hours differ — see Visit Us page
+                Weekend hours differ, see Visit Us page
               </li>
             </ul>
           </div>

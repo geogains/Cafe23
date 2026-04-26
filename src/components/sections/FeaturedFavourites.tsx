@@ -17,7 +17,7 @@ const favourites = [
   {
     name: "Ferrero Rocher Ice Cream Shake",
     category: "Milkshakes",
-    description: "The gold standard of shakes — a decadent blend featuring genuine Ferrero Rocher chocolates and vanilla ice cream whipped into a thick dairy shake. Indulgent, nutty, and extra luxurious.",
+    description: "The gold standard of shakes. A decadent blend featuring genuine Ferrero Rocher chocolates and vanilla ice cream whipped into a thick dairy shake. Indulgent, nutty, and extra luxurious.",
     badge: "Must Try",
     tint: "warm" as const,
     image: "/images/ferrerorocher.png",
@@ -26,7 +26,7 @@ const favourites = [
   {
     name: "Signature Mac and Cheese",
     category: "House Specials",
-    description: "The ultimate comfort bowl. Our signature mac and cheese features tender pasta drenched in rich, gooey house blend cheese sauce — a unique twist on a classic favourite.",
+    description: "The ultimate comfort bowl. Our signature mac and cheese features tender pasta drenched in rich, gooey house blend cheese sauce. A unique twist on a classic favourite.",
     badge: "Our Signature",
     tint: "dark" as const,
     image: "/images/macncheese.png",
@@ -44,7 +44,7 @@ const favourites = [
   {
     name: "Galaxy Ripple Brownie",
     category: "New York-Style Desserts",
-    description: "Our signature brownies are the definition of indulgence — crafted with premium cocoa and high-quality butter. Incredibly dense, fudgy, and rich, each bite is packed with flavour and topped with a Galaxy Ripple for an extra layer of decadence.",
+    description: "Our signature brownies are the definition of indulgence, crafted with premium cocoa and high-quality butter. Incredibly dense, fudgy, and rich, each bite is packed with flavour and topped with a Galaxy Ripple for an extra layer of decadence.",
     badge: "Sweet Treat",
     tint: "green" as const,
     image: "/images/galaxybrownie1.png",

@@ -81,7 +81,7 @@ export function AboutPreview() {
                 comforting and honest. The space is warm, aesthetic, and entirely yours.
               </p>
               <p>
-                Whether you&apos;re stopping in for five minutes or settling in for the afternoon —
+                Whether you&apos;re stopping in for five minutes or settling in for the afternoon, 
                 you&apos;re always welcome here.
               </p>
             </div>

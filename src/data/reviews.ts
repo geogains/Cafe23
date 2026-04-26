@@ -10,25 +10,25 @@ export const reviews: Review[] = [
   {
     name: "Amara K.",
     rating: 5,
-    text: "Honestly one of the cosiest spots I've been to in Walsall. The matcha is absolutely beautiful — thick, creamy, and perfectly sweetened. I come here most weeks now.",
+    text: "Honestly one of the cosiest spots I've been to in Walsall. The matcha is absolutely beautiful. Thick, creamy, and perfectly sweetened. I come here most weeks now.",
     highlight: "The matcha is absolutely beautiful.",
   },
   {
     name: "Jordan T.",
     rating: 5,
-    text: "The atmosphere here is something else. It's calm, aesthetic, and feels like a little escape. I used to struggle to find a place to work in Walsall — Cafe 23 sorted that for me.",
+    text: "The atmosphere here is something else. It's calm, aesthetic, and feels like a little escape. I used to struggle to find a place to work in Walsall. Cafe 23 sorted that for me.",
     highlight: "A calm, aesthetic little escape.",
   },
   {
     name: "Priya S.",
     rating: 5,
-    text: "The Kashmiri chai is incredible — I've never had it done this well locally. Staff were so friendly and welcoming. It genuinely feels like they care.",
+    text: "The Kashmiri chai is incredible. I've never had it done this well locally. Staff were so friendly and welcoming. It genuinely feels like they care.",
     highlight: "The Kashmiri chai is incredible.",
   },
   {
     name: "Liam B.",
     rating: 5,
-    text: "Walsall needed somewhere like this. The Colombian coffee is proper — strong, smooth, and nothing like you'd get at a chain. The loaded croissants are a must-order.",
+    text: "Walsall needed somewhere like this. The Colombian coffee is proper. Strong, smooth, and nothing like you'd get at a chain. The loaded croissants are a must-order.",
     highlight: "Walsall needed somewhere like this.",
   },
   {
@@ -40,7 +40,7 @@ export const reviews: Review[] = [
   {
     name: "Imran H.",
     rating: 4,
-    text: "Really great independent café with a lot of personality. The karak chai is spot on. Feels different from anything else in Walsall — it's got a real community feel to it.",
+    text: "Really great independent café with a lot of personality. The karak chai is spot on. Feels different from anything else in Walsall. It's got a real community feel to it.",
     highlight: "A real community feel.",
   },
 ];

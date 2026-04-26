@@ -331,7 +331,7 @@ export const menuCategories: MenuCategory[] = [
       },
       {
         name: "Custom Mojito",
-        description: "Choose your own flavour combination — ask our team.",
+        description: "Choose your own flavour combination. Ask our team.",
         price: "£5.90",
       },
     ],
@@ -372,7 +372,7 @@ export const menuCategories: MenuCategory[] = [
     items: [
       {
         name: "Viral Double Cup",
-        description: "Our signature viral layered drink experience — a Cafe 23 exclusive.",
+        description: "Our signature viral layered drink experience, a Cafe 23 exclusive.",
         price: "£7.00",
         badge: "Signature",
       },
@@ -643,7 +643,7 @@ export const menuCategories: MenuCategory[] = [
       },
       {
         name: "Signature Mac & Cheese",
-        description: "Rich, creamy macaroni cheese — a Cafe 23 classic.",
+        description: "Rich, creamy macaroni cheese, a Cafe 23 classic.",
         price: "£5.50",
         badge: "Signature",
       },
@@ -682,7 +682,7 @@ export const menuCategories: MenuCategory[] = [
     items: [
       {
         name: "Exclusive Loaded Croissant",
-        description: "Our exclusive croissant loaded with premium fillings — a Cafe 23 signature.",
+        description: "Our exclusive croissant loaded with premium fillings, a Cafe 23 signature.",
         price: "Ask in store",
         badge: "Signature",
       },
