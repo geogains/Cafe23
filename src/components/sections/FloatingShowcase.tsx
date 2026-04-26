@@ -33,7 +33,7 @@ const floatingItems = [
     position: "top-1/2 -translate-y-1/2 left-[-1%] sm:left-[1%]",
   },
   {
-    src: "/images/4.png",
+    src: "/images/10.png",
     alt: "Cinnamon Roll",
     delay: "0.4s",
     animation: "animate-float-medium",
@@ -123,26 +123,14 @@ export function FloatingShowcase() {
         <div className="relative min-h-[480px] sm:min-h-[560px] lg:min-h-[600px] flex items-center justify-center">
           {/* Central text */}
           <div className="relative z-10 text-center max-w-lg px-4">
-            <div className="reveal inline-flex items-center gap-2 text-[#608552] text-xs font-semibold uppercase tracking-widest mb-6">
-              <span className="w-6 h-px bg-[#608552]" />
-              Signature Favourites
-              <span className="w-6 h-px bg-[#608552]" />
-            </div>
-            <h2 className="reveal font-display text-4xl sm:text-5xl lg:text-6xl font-bold text-[#1C1C1C] leading-tight mb-6">
+            {/* DESKTOP HEADING SIZE CONTROL — adjust lg/xl values here */}
+            <h2 className="reveal font-display text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold text-[#1C1C1C] leading-tight mb-6">
               GIVE THE <span className="text-[#608552]">PEOPLE</span> WHAT THEY WANT!
             </h2>
-            <div className="reveal bg-white/5 backdrop-blur-[3px] border border-white/20 rounded-2xl px-5 py-4 sm:px-6 sm:py-5 mb-8">
+            <div className="reveal bg-white/5 backdrop-blur-[3px] border border-white/20 rounded-2xl px-5 py-4 sm:px-6 sm:py-5">
               <p className="text-[#5A5A5A] text-base sm:text-lg leading-relaxed">
                 From our silky matcha lattes to our legendary loaded croissants — everything on the menu is made to make your day a little better.
               </p>
-            </div>
-            <div className="reveal">
-              <Link
-                href="/menu"
-                className="inline-flex items-center gap-2 bg-[#608552] hover:bg-[#4A6B3E] text-white font-semibold px-7 py-3.5 rounded-full transition-all duration-200 hover:shadow-lg hover:-translate-y-0.5 text-sm sm:text-base"
-              >
-                View Full Menu
-              </Link>
             </div>
           </div>
 
@@ -165,6 +153,16 @@ export function FloatingShowcase() {
             </div>
           ))}
         </div>
+        </div>
+
+        {/* CTA — outside glass container */}
+        <div className="reveal text-center mt-8">
+          <Link
+            href="/menu"
+            className="inline-flex items-center gap-2 bg-[#608552] hover:bg-[#4A6B3E] text-white font-semibold px-7 py-3.5 rounded-full transition-all duration-200 hover:shadow-lg hover:-translate-y-0.5 text-sm sm:text-base"
+          >
+            View Full Menu
+          </Link>
         </div>
       </div>
     </section>

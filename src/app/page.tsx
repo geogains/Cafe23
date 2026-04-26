@@ -3,13 +3,13 @@ import { FloatingShowcase } from "@/components/sections/FloatingShowcase";
 import { FeaturedFavourites } from "@/components/sections/FeaturedFavourites";
 import { ReviewsSection } from "@/components/sections/ReviewsSection";
 import { AboutPreview } from "@/components/sections/AboutPreview";
-import { VisitSection } from "@/components/sections/VisitSection";
+import { FAQSection } from "@/components/sections/FAQSection";
 import { FinalCTA } from "@/components/sections/FinalCTA";
 
 export const metadata: Metadata = {
   title: "Cafe 23 | Independent Café in Walsall",
   description:
-    "Cafe 23 is Walsall's favourite independent café. Colombian coffee, ceremonial matcha, Kashmiri chai, loaded croissants, and freshly baked pastries — in the heart of Walsall.",
+    "Cafe 23 is Walsall's favourite independent café. Colombian coffee, ceremonial matcha, Kashmiri chai, loaded croissants, and freshly baked pastries, in the heart of Walsall.",
 };
 
 export default function HomePage() {
@@ -19,7 +19,7 @@ export default function HomePage() {
       <FeaturedFavourites />
       <AboutPreview />
       <ReviewsSection />
-      <VisitSection />
+      <FAQSection />
       <FinalCTA />
     </>
   );

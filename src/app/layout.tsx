@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     template: "%s | Cafe 23 Walsall",
   },
   description:
-    "Cafe 23 is Walsall's favourite independent café — serving rich Colombian coffee, ceremonial matcha, Kashmiri chai, freshly baked pastries, and comfort food inside the Saddlers Shopping Centre.",
+    "Cafe 23 is Walsall's favourite independent café. Serving rich Colombian coffee, ceremonial matcha, Kashmiri chai, freshly baked pastries, and comfort food inside the Saddlers Shopping Centre.",
   keywords: [
     "cafe Walsall",
     "coffee shop Walsall",

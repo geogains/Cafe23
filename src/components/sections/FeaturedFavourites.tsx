@@ -2,6 +2,7 @@
 
 import { useEffect, useRef } from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 const favourites = [
   {
@@ -11,6 +12,7 @@ const favourites = [
     badge: "Most Popular",
     tint: "green" as const,
     image: "/images/icematcha.png",
+    scrollTo: "iced-drinks",
   },
   {
     name: "Ferrero Rocher Ice Cream Shake",
@@ -19,6 +21,7 @@ const favourites = [
     badge: "Must Try",
     tint: "warm" as const,
     image: "/images/ferrerorocher.png",
+    scrollTo: "milkshakes",
   },
   {
     name: "Signature Mac and Cheese",
@@ -27,6 +30,7 @@ const favourites = [
     badge: "Our Signature",
     tint: "dark" as const,
     image: "/images/macncheese.png",
+    scrollTo: "house-specials",
   },
   {
     name: "Chicken Pizza Bagel",
@@ -35,6 +39,7 @@ const favourites = [
     badge: "Fan Favourite",
     tint: "warm" as const,
     image: "/images/chickenbagel.png",
+    scrollTo: "house-specials",
   },
   {
     name: "Galaxy Ripple Brownie",
@@ -43,6 +48,7 @@ const favourites = [
     badge: "Sweet Treat",
     tint: "green" as const,
     image: "/images/galaxybrownie1.png",
+    scrollTo: "brownies-cookies",
   },
   {
     name: "Strawberry Mojito",
@@ -51,10 +57,15 @@ const favourites = [
     badge: "Fruity & Fresh",
     tint: "cream" as const,
     image: "/images/mojito.png",
+    scrollTo: "mojitos-refreshers",
   },
 ];
 
-export function FeaturedFavourites() {
+type Props = {
+  mode?: "home" | "menu";
+};
+
+export function FeaturedFavourites({ mode = "home" }: Props) {
   const sectionRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -76,6 +87,10 @@ export function FeaturedFavourites() {
     return () => observer.disconnect();
   }, []);
 
+  const handleMenuScroll = (scrollTo: string) => {
+    document.getElementById(scrollTo)?.scrollIntoView({ behavior: "smooth", block: "start" });
+  };
+
   return (
     <section ref={sectionRef} className="relative bg-[#EDE8DC] py-20 sm:py-28 lg:py-32 overflow-hidden">
       <div className="absolute inset-0 pointer-events-none z-0 bg-[url('/images/bg.png')] bg-center bg-[length:100%_auto] bg-repeat-y opacity-[0.08]" />
@@ -95,39 +110,51 @@ export function FeaturedFavourites() {
 
         {/* Cards grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {favourites.map((item, i) => (
-            <article
-              key={i}
-              className="reveal group bg-white rounded-3xl overflow-hidden border border-[#E4DDD1] hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
-            >
-              {/* Image */}
-              <div className="relative h-52 overflow-hidden">
-                <Image
-                  src={item.image}
-                  alt={item.name}
-                  fill
-                  className="object-cover"
-                />
-                {/* Badge */}
-                <div className="absolute top-4 left-4 bg-[#608552] text-white text-[11px] font-bold px-3 py-1.5 rounded-full">
-                  {item.badge}
+          {favourites.map((item, i) => {
+            const article = (
+              <article className="reveal group bg-white rounded-3xl overflow-hidden border border-[#E4DDD1] hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+                {/* Image */}
+                <div className="relative h-52 overflow-hidden">
+                  <Image src={item.image} alt={item.name} fill className="object-cover" />
+                  {/* Badge */}
+                  <div className="absolute top-4 left-4 bg-[#608552] text-white text-[11px] font-bold px-3 py-1.5 rounded-full">
+                    {item.badge}
+                  </div>
                 </div>
-              </div>
+                {/* Content */}
+                <div className="p-6">
+                  <span className="text-[#608552] text-xs font-semibold uppercase tracking-wider">
+                    {item.category}
+                  </span>
+                  <h3 className="font-display text-xl font-bold text-[#1C1C1C] mt-1 mb-3">
+                    {item.name}
+                  </h3>
+                  <p className="text-[#5A5A5A] text-sm leading-relaxed">
+                    {item.description}
+                  </p>
+                </div>
+              </article>
+            );
 
-              {/* Content */}
-              <div className="p-6">
-                <span className="text-[#608552] text-xs font-semibold uppercase tracking-wider">
-                  {item.category}
-                </span>
-                <h3 className="font-display text-xl font-bold text-[#1C1C1C] mt-1 mb-3">
-                  {item.name}
-                </h3>
-                <p className="text-[#5A5A5A] text-sm leading-relaxed">
-                  {item.description}
-                </p>
-              </div>
-            </article>
-          ))}
+            if (mode === "menu") {
+              return (
+                <button
+                  key={i}
+                  type="button"
+                  className="block w-full text-left"
+                  onClick={() => handleMenuScroll(item.scrollTo)}
+                >
+                  {article}
+                </button>
+              );
+            }
+
+            return (
+              <Link key={i} href="/menu" className="block">
+                {article}
+              </Link>
+            );
+          })}
         </div>
       </div>
     </section>

@@ -1,7 +1,6 @@
 "use client";
 
 import { useEffect, useRef } from "react";
-import Link from "next/link";
 
 export function FinalCTA() {
   const sectionRef = useRef<HTMLDivElement>(null);
@@ -53,24 +52,9 @@ export function FinalCTA() {
           Your next great coffee is waiting.
         </h2>
 
-        <p className="reveal text-white/75 text-base sm:text-xl max-w-xl mx-auto leading-relaxed mb-12">
+        <p className="reveal text-white/75 text-base sm:text-xl max-w-xl mx-auto leading-relaxed">
           Come see what the fuss is about. We&apos;re in the heart of Walsall and we can&apos;t wait to welcome you.
         </p>
-
-        <div className="reveal flex flex-wrap items-center justify-center gap-4">
-          <Link
-            href="/visit"
-            className="inline-flex items-center gap-2 bg-white text-[#608552] font-bold px-8 py-4 rounded-full hover:bg-[#F7F2E9] transition-all duration-200 hover:shadow-xl hover:-translate-y-0.5 text-base"
-          >
-            Visit Cafe 23 →
-          </Link>
-          <Link
-            href="/menu"
-            className="inline-flex items-center gap-2 bg-transparent border-2 border-white/40 text-white font-semibold px-8 py-4 rounded-full hover:border-white hover:bg-white/10 transition-all duration-200 text-base"
-          >
-            See the Menu
-          </Link>
-        </div>
       </div>
     </section>
   );
