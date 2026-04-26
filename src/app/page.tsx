@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import { Hero } from "@/components/sections/Hero";
 import { FloatingShowcase } from "@/components/sections/FloatingShowcase";
 import { FeaturedFavourites } from "@/components/sections/FeaturedFavourites";
 import { ReviewsSection } from "@/components/sections/ReviewsSection";
@@ -16,7 +15,6 @@ export const metadata: Metadata = {
 export default function HomePage() {
   return (
     <>
-      <Hero />
       <FloatingShowcase />
       <FeaturedFavourites />
       <ReviewsSection />

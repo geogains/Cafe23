@@ -86,7 +86,7 @@ export function FloatingShowcase() {
   return (
     <section
       ref={sectionRef}
-      className="relative bg-[#F7F2E9] py-20 sm:py-28 lg:py-36 overflow-hidden"
+      className="relative bg-[#F7F2E9] pt-32 sm:pt-40 pb-20 sm:pb-28 lg:pb-36 overflow-hidden"
     >
       {/* Background orb */}
       <div
@@ -158,13 +158,15 @@ export function FloatingShowcase() {
               className={`absolute ${item.position} ${item.animation} ${item.rotation}`}
               style={{ animationDelay: item.delay }}
             >
-              <Image
-                src={item.src}
-                alt={item.alt}
-                width={200}
-                height={250}
-                className={`${item.size} object-contain`}
-              />
+              <div className="reveal">
+                <Image
+                  src={item.src}
+                  alt={item.alt}
+                  width={200}
+                  height={250}
+                  className={`${item.size} object-contain`}
+                />
+              </div>
             </div>
           ))}
         </div>

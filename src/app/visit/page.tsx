@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { MapPin, Clock, Phone, Mail, Train, Bus } from "lucide-react";
 import { siteConfig } from "@/data/site";
 import Link from "next/link";
@@ -152,31 +153,9 @@ export default function VisitPage() {
                 </div>
               </div>
 
-              {/* Contact card */}
-              <div className="bg-white rounded-3xl p-7 border border-[#E4DDD1]">
-                <h2 className="font-semibold text-[#1C1C1C] mb-5">Contact Us</h2>
-                <div className="space-y-4">
-                  <a
-                    href={`tel:${siteConfig.contact.phone}`}
-                    className="flex items-center gap-3 text-sm text-[#5A5A5A] hover:text-[#608552] transition-colors"
-                  >
-                    <Phone className="w-4 h-4 text-[#608552]" />
-                    <span>{siteConfig.contact.phone}</span>
-                    {/* [PLACEHOLDER] Replace with real phone number */}
-                  </a>
-                  <a
-                    href={`mailto:${siteConfig.contact.email}`}
-                    className="flex items-center gap-3 text-sm text-[#5A5A5A] hover:text-[#608552] transition-colors"
-                  >
-                    <Mail className="w-4 h-4 text-[#608552]" />
-                    <span>{siteConfig.contact.email}</span>
-                    {/* [PLACEHOLDER] Replace with real email */}
-                  </a>
-                </div>
-              </div>
             </div>
 
-            {/* Right column: map + contact form */}
+            {/* Right column: map + contact */}
             <div className="lg:col-span-3 space-y-8">
               {/* Map */}
               <div className="w-full h-80 sm:h-96 rounded-3xl overflow-hidden border border-[#E4DDD1] relative bg-[#D4CFCA]">
@@ -190,74 +169,61 @@ export default function VisitPage() {
                 />
               </div>
 
-              {/* Enquiry form */}
-              <div className="bg-white rounded-3xl p-8 sm:p-10 border border-[#E4DDD1]">
+              {/* Contact card */}
+              <div className="bg-white rounded-3xl p-8 sm:p-10 border border-[#E4DDD1] shadow-lg">
                 <h2 className="font-display text-2xl sm:text-3xl font-bold text-[#1C1C1C] mb-2">
-                  Send us a message
+                  Have a question?
                 </h2>
-                <p className="text-[#5A5A5A] text-sm mb-8">
-                  Have a question, a group booking enquiry, or just want to say hello? We&apos;d love to hear from you.
+                <p className="text-[#5A5A5A] text-sm leading-relaxed mb-8">
+                  Group booking enquiry, event question, or just want to say hello? We&apos;d love to hear from you.
                 </p>
 
-                {/* [PLACEHOLDER] Connect this form to a backend / form service (e.g. Formspree, Resend, custom API) */}
-                <form className="space-y-5">
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
-                    <div>
-                      <label htmlFor="name" className="block text-sm font-semibold text-[#1C1C1C] mb-2">
-                        Your name
-                      </label>
-                      <input
-                        type="text"
-                        id="name"
-                        name="name"
-                        placeholder="Jane Smith"
-                        className="w-full px-4 py-3 rounded-xl border border-[#E4DDD1] bg-[#F7F2E9] text-[#1C1C1C] placeholder:text-[#B0A898] text-sm focus:outline-none focus:ring-2 focus:ring-[#608552]/30 focus:border-[#608552] transition-colors"
-                      />
-                    </div>
-                    <div>
-                      <label htmlFor="email" className="block text-sm font-semibold text-[#1C1C1C] mb-2">
-                        Email address
-                      </label>
-                      <input
-                        type="email"
-                        id="email"
-                        name="email"
-                        placeholder="jane@example.com"
-                        className="w-full px-4 py-3 rounded-xl border border-[#E4DDD1] bg-[#F7F2E9] text-[#1C1C1C] placeholder:text-[#B0A898] text-sm focus:outline-none focus:ring-2 focus:ring-[#608552]/30 focus:border-[#608552] transition-colors"
-                      />
-                    </div>
-                  </div>
-                  <div>
-                    <label htmlFor="subject" className="block text-sm font-semibold text-[#1C1C1C] mb-2">
-                      Subject
-                    </label>
-                    <input
-                      type="text"
-                      id="subject"
-                      name="subject"
-                      placeholder="e.g. Group booking, event enquiry..."
-                      className="w-full px-4 py-3 rounded-xl border border-[#E4DDD1] bg-[#F7F2E9] text-[#1C1C1C] placeholder:text-[#B0A898] text-sm focus:outline-none focus:ring-2 focus:ring-[#608552]/30 focus:border-[#608552] transition-colors"
-                    />
-                  </div>
-                  <div>
-                    <label htmlFor="message" className="block text-sm font-semibold text-[#1C1C1C] mb-2">
-                      Message
-                    </label>
-                    <textarea
-                      id="message"
-                      name="message"
-                      rows={5}
-                      placeholder="Tell us how we can help..."
-                      className="w-full px-4 py-3 rounded-xl border border-[#E4DDD1] bg-[#F7F2E9] text-[#1C1C1C] placeholder:text-[#B0A898] text-sm focus:outline-none focus:ring-2 focus:ring-[#608552]/30 focus:border-[#608552] transition-colors resize-none"
-                    />
-                  </div>
-                  <button
-                    type="submit"
-                    className="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-[#608552] hover:bg-[#4A6B3E] text-white font-semibold px-8 py-3.5 rounded-full transition-all duration-200 hover:shadow-lg hover:-translate-y-0.5"
+                {/* Contact rows */}
+                <div className="space-y-3 mb-8">
+                  <a
+                    href={`tel:${siteConfig.contact.phone}`}
+                    className="flex items-center gap-4 p-4 rounded-2xl bg-[#F7F2E9] hover:bg-[#EDE8DC] transition-colors group"
                   >
-                    Send Message
-                  </button>
-                </form>
+                    <div className="w-10 h-10 rounded-xl bg-[#608552]/10 flex items-center justify-center flex-shrink-0 group-hover:bg-[#608552] transition-colors duration-200">
+                      <Phone className="w-5 h-5 text-[#608552] group-hover:text-white transition-colors duration-200" />
+                    </div>
+                    <span className="text-[#1C1C1C] font-medium text-sm">{siteConfig.contact.phone}</span>
+                  </a>
+                  <a
+                    href="mailto:hello@cafe23walsall.co.uk?subject=Enquiry%20from%20Cafe%2023%20website"
+                    className="flex items-center gap-4 p-4 rounded-2xl bg-[#F7F2E9] hover:bg-[#EDE8DC] transition-colors group"
+                  >
+                    <div className="w-10 h-10 rounded-xl bg-[#608552]/10 flex items-center justify-center flex-shrink-0 group-hover:bg-[#608552] transition-colors duration-200">
+                      <Mail className="w-5 h-5 text-[#608552] group-hover:text-white transition-colors duration-200" />
+                    </div>
+                    <span className="text-[#1C1C1C] font-medium text-sm">{siteConfig.contact.email}</span>
+                  </a>
+                </div>
+
+                {/* Social links */}
+                <div className="border-t border-[#E4DDD1] pt-6">
+                  <p className="text-xs font-semibold uppercase tracking-widest text-[#888] text-center mb-5">Follow Us</p>
+                  <div className="flex items-center justify-center gap-5">
+                    <a href="https://www.instagram.com/cafe23uk/" target="_blank" rel="noopener noreferrer" className="hover:scale-105 transition-transform duration-200">
+                      <Image
+                        src="/images/Instagram1.png"
+                        alt="Instagram"
+                        width={56}
+                        height={56}
+                        className="h-14 w-auto object-contain rounded-xl"
+                      />
+                    </a>
+                    <a href="https://www.tiktok.com/@cafe23uk" target="_blank" rel="noopener noreferrer" className="hover:scale-105 transition-transform duration-200">
+                      <Image
+                        src="/images/TikTok1.png"
+                        alt="TikTok"
+                        width={56}
+                        height={56}
+                        className="h-14 w-auto object-contain rounded-xl"
+                      />
+                    </a>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
