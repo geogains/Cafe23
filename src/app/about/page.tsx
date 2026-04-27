@@ -39,11 +39,11 @@ const bentoImages = [
   { src: "/images/gallery8.png",  span: "col-span-1",               height: "h-64" },
   { src: "/images/gallery12.png", span: "col-span-2 lg:col-span-2", height: "h-64" },
   // Row 3 on desktop: portrait(1) + landscape(2) + portrait(1)
-  { src: "/images/gallery9.png",  span: "col-span-1",               height: "h-56" },
+  { src: "/images/gallery22.png",  span: "col-span-1",               height: "h-56" },
   { src: "/images/gallery13.png", span: "col-span-1 lg:col-span-2", height: "h-56" },
   { src: "/images/gallery10.png", span: "col-span-1",               height: "h-56" },
   // Row 4 on desktop: portrait→wide(2) + landscape(2)
-  { src: "/images/gallery11.png", span: "col-span-1 lg:col-span-2", height: "h-52" },
+  { src: "/images/gallery23.png", span: "col-span-1 lg:col-span-2", height: "h-52" },
   { src: "/images/gallery14.png", span: "col-span-2 lg:col-span-2", height: "h-52" },
 ];
 
