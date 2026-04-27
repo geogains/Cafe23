@@ -276,7 +276,7 @@ export default function MenuPage() {
       </section>
 
       {/* Extras */}
-      <section id="extras" className="bg-[#EDE8DC] py-16 sm:py-24 scroll-mt-32 sm:scroll-mt-40">
+      <section id="extras" className="bg-[#F7F2E9] py-16 sm:py-24 scroll-mt-32 sm:scroll-mt-40">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeader label="More From Us" title="Extras" />
           <div className="space-y-10">

@@ -196,7 +196,7 @@ export default function AboutPage() {
       </section>
 
       {/* Atmosphere section */}
-      <section className="bg-[#EDE8DC] py-20 sm:py-28">
+      <section className="bg-[#F7F2E9] py-20 sm:py-28">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-14">
           {/* Text content */}
           <div className="reveal max-w-2xl">
@@ -205,7 +205,7 @@ export default function AboutPage() {
               The Space
             </div>
             <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold text-[#1C1C1C] leading-tight mb-6">
-              An interior worth visiting on its own.
+              A <span className="text-[#608552]">cosy</span> atmosphere.
             </h2>
             <p className="text-[#5A5A5A] text-base sm:text-lg leading-relaxed mb-6">
               The atmosphere at Cafe 23 is something people comment on instantly, cosy but aesthetic, calm but social. It&apos;s a space that&apos;s easy to settle into and hard to leave.
