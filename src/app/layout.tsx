@@ -45,7 +45,7 @@ export const metadata: Metadata = {
     url: "https://cafe23-three.vercel.app/",
     images: [
       {
-        url: "https://cafe23-three.vercel.app/images/preview.png",
+        url: "https://cafe23-three.vercel.app/public/images/preview.png",
         width: 1200,
         height: 630,
         alt: "Cafe 23 preview",
@@ -56,7 +56,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Cafe 23",
     description: "Colombian coffee. Signature matcha. Kashmiri chai.",
-    images: ["https://cafe23-three.vercel.app/images/preview.png"],
+    images: ["https://cafe23-three.vercel.app/public/images/preview.png"],
   },
   icons: {
     icon: "/images/favicon.png",
@@ -100,26 +100,14 @@ export default function RootLayout({
               openingHoursSpecification: [
                 {
                   "@type": "OpeningHoursSpecification",
-                  dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday"],
-                  opens: "08:00",
-                  closes: "18:00",
-                },
-                {
-                  "@type": "OpeningHoursSpecification",
-                  dayOfWeek: ["Friday"],
-                  opens: "08:00",
-                  closes: "19:00",
-                },
-                {
-                  "@type": "OpeningHoursSpecification",
-                  dayOfWeek: ["Saturday"],
-                  opens: "09:00",
+                  dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+                  opens: "07:00",
                   closes: "19:00",
                 },
                 {
                   "@type": "OpeningHoursSpecification",
                   dayOfWeek: ["Sunday"],
-                  opens: "10:00",
+                  opens: "09:00",
                   closes: "17:00",
                 },
               ],

@@ -11,13 +11,13 @@ export const siteConfig = {
     full: "Saddlers Shopping Centre, 27 Park St, Walsall WS1 1LY",
   },
   hours: [
-    { day: "Monday",    open: "8:00am", close: "6:00pm" },
-    { day: "Tuesday",   open: "8:00am", close: "6:00pm" },
-    { day: "Wednesday", open: "8:00am", close: "6:00pm" },
-    { day: "Thursday",  open: "8:00am", close: "6:00pm" },
-    { day: "Friday",    open: "8:00am", close: "7:00pm" },
-    { day: "Saturday",  open: "9:00am", close: "7:00pm" },
-    { day: "Sunday",    open: "10:00am", close: "5:00pm" },
+    { day: "Monday",    open: "07:00", close: "19:00" },
+    { day: "Tuesday",   open: "07:00", close: "19:00" },
+    { day: "Wednesday", open: "07:00", close: "19:00" },
+    { day: "Thursday",  open: "07:00", close: "19:00" },
+    { day: "Friday",    open: "07:00", close: "19:00" },
+    { day: "Saturday",  open: "07:00", close: "19:00" },
+    { day: "Sunday",    open: "09:00", close: "17:00" },
   ],
   contact: {
     // [PLACEHOLDER] Replace with actual phone number

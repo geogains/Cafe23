@@ -23,29 +23,6 @@ export function Footer() {
             <p className="text-white/60 text-sm leading-relaxed">
               Walsall&apos;s favourite independent café. Colombian coffee, speciality drinks, comfort food, and a community that feels like home.
             </p>
-            <div className="flex items-center gap-3 mt-6">
-              {/* [PLACEHOLDER] Replace href with actual social URLs */}
-              <a
-                href="#"
-                aria-label="Instagram"
-                className="w-9 h-9 rounded-full border border-white/20 flex items-center justify-center hover:bg-[#608552] hover:border-[#608552] transition-colors"
-              >
-                {/* Instagram SVG icon */}
-                <svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
-                  <circle cx="12" cy="12" r="4" />
-                  <circle cx="17.5" cy="6.5" r="0.5" fill="currentColor" />
-                </svg>
-              </a>
-              {/* TikTok icon */}
-              <a
-                href="#"
-                aria-label="TikTok"
-                className="w-9 h-9 rounded-full border border-white/20 flex items-center justify-center hover:bg-[#608552] hover:border-[#608552] transition-colors text-xs font-bold"
-              >
-                TT
-              </a>
-            </div>
           </div>
 
           {/* Quick links */}
