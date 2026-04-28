@@ -45,10 +45,12 @@ export const metadata: Metadata = {
     url: "https://cafe23-three.vercel.app/",
     images: [
       {
-        url: "https://cafe23-three.vercel.app/images/preview1.png",
+        url: "https://cafe23-three.vercel.app/images/preview.jpg",
+        secureUrl: "https://cafe23-three.vercel.app/images/preview.jpg",
         width: 1200,
         height: 630,
         alt: "Cafe 23 preview",
+        type: "image/jpeg",
       },
     ],
   },
@@ -56,7 +58,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Cafe 23",
     description: "Colombian coffee. Signature matcha. Kashmiri chai.",
-    images: ["https://cafe23-three.vercel.app/images/preview1.png"],
+    images: ["https://cafe23-three.vercel.app/images/preview.jpg"],
   },
   icons: {
     icon: "/images/favicon.png",
